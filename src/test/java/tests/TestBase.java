@@ -6,17 +6,18 @@ import org.testng.annotations.BeforeSuite;
 
 public class TestBase {
 
-   static ApplicationManager app = new ApplicationManager();
+    static ApplicationManager app = new ApplicationManager();
 
     @BeforeSuite
-    public void setup(){
-       app.init();
+    public void setup() {
+        app.init();
 
-   }
-   @AfterSuite
-   public void tearDown(){
-       app.stop();
+    }
 
-   }
+    @AfterSuite
+    public void tearDown() {
+        app.stop();
+
+    }
 
 }
